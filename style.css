@@ -33,6 +33,17 @@ header {
 font-size: 1.25rem;
 }
 
+.slide-content {
+  max-width: 450px;
+  padding: 10px 20px 10px 0
+}
+
+.slide-content .h1 {
+  font-size: 62px
+}
+
+
+
 /** Text Animation **/
 
 @-webkit-keyframes fadeInUpSD {
@@ -72,6 +83,9 @@ font-size: 1.25rem;
   animation-name: fadeInUpSD;
   animation-duration: 1s;
   opacity: 1;
+
+  width: 100%;
+  padding: 10px 20px 30px 0;
 }
 
 /* Text Animation End **/
@@ -90,7 +104,7 @@ font-size: 1.25rem;
   text-align: center;
 }
 
-.slick-dots li {
+/* .slick-dots li {
   width: auto;
   position: relative;
   display: inline-block;
@@ -99,7 +113,7 @@ font-size: 1.25rem;
   margin: 0 5px;
   padding: 0;
   cursor: pointer;
-}
+} */
 
 /* Media Queries */
 

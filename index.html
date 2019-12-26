@@ -16,10 +16,11 @@
 	<title>Using Text Animations with Slick Slider</title>
 </head>
 
-<body>
+<body class="cssAnimate">
   <header class="hero-text">
 	<div class="hero" data-arrows="true" data-autoplay="true">
 	  <!--.hero-slide-->
+	  <div class="slider-overlay slider-1-overlay"></div>
 	  <div class="hero-slide">
          <img alt="Mars Image" class="img-responsive cover" src="https://raw.githubusercontent.com/solodev/text-dark-overlay-on-hero-sliders/master/images/mars-1.jpg">
          <div class="header-content text-white position-absolute slide-content col-lg-4">
@@ -28,6 +29,7 @@
          </div>
 	  </div>
 	  <!--.hero-slide-->
+	  <div class="slider-overlay slider-2-overlay"></div>
 	  <div class="hero-slide">
           <img alt="Mars Image" class="img-responsive cover" src="https://raw.githubusercontent.com/solodev/text-dark-overlay-on-hero-sliders/master/images/mars-2.jpg">
           <div class="header-content text-white position-absolute slide-content col-lg-4">
@@ -37,6 +39,7 @@
              </div>
 	  </div>
 	  <!--.hero-slide-->
+	  <div class="slider-overlay slider-3-overlay"></div>
 	  <div class="hero-slide">
           <img alt="Mars Image" class="img-responsive cover" src="https://raw.githubusercontent.com/solodev/text-dark-overlay-on-hero-sliders/master/images/mars-3.jpg">
           <div class="header-content text-white position-absolute slide-content col-lg-4">
@@ -93,17 +96,19 @@
 
 
   <script>
+	
 	jQuery(document).ready(function ($) {
 	  $('.hero').slick({
 		dots: true,
         infinite: true,
         speed: 500,
-        fade: true,
+        fade: !0,
         cssEase: 'linear',
 		slidesToShow: 1,
 		slidesToScroll: 1,
+		fade: !0,
         autoplay: true,
-		autoplaySpeed: 1000,
+		autoplaySpeed: 8000,
         draggable: false,
 		arrows: false,
 		responsive: [
